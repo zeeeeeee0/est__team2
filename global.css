@@ -69,3 +69,9 @@ html {
 body {
   font-size: 1rem;
 }
+
+/* prevent horizontal scroll */
+html, body {
+	width: 100%;
+	box-sizing: border-box;
+}
