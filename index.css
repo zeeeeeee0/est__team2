@@ -30,12 +30,8 @@ header {
   height: var(--header-size);
   padding: 0 3.2rem;
 }
-
-/* header h1 */
 header > h1 { margin: 3.25rem ;}
 header > h1 > img { width: 13.5rem; height: 2.5rem; }
-
-/* header gnb */
 header > .gnb {
   position: absolute;
   top: 50%;
@@ -84,7 +80,7 @@ header > .utility > .btn {
   border: none;
 }
 
-/* main */
+/* hero section */
 .section-hero {
   .slide-wrapper {
     width: 100%;
@@ -141,6 +137,7 @@ header > .utility > .btn {
   }
 }
 
+/* split section */
 .section-split {
   width: 130rem;
   height: 63rem;
@@ -241,6 +238,7 @@ header > .utility > .btn {
     height: 76.0156rem;
   }
 }
+
 #first {
   .split--text {
     margin-left:3.5rem;
@@ -258,7 +256,6 @@ header > .utility > .btn {
   }
 }
 
-
 #second {
   justify-content: flex-start;
   .split--text {
@@ -275,5 +272,50 @@ header > .utility > .btn {
     height: 5.2rem;
   }
 }
+
+.section-partners {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 7rem;
+  padding: 7rem 0 12rem;
+  .partner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30rem;
+    position: relative;
+    cursor: pointer;
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      content: "";
+      display: inline-flex;
+      width: 8.1547rem;
+      height: 8.1547rem;
+      background: url(images/ico_partner_hover.svg);
+    }
+    .icon--text {
+      color: #FFF;
+      text-align: center;
+      font-family: Heebo;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2.8rem; /* 175% */
+      letter-spacing: 0.08rem;
+      text-transform: uppercase;
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      white-space: nowrap;
+      transform: translate(-50%, 0);
+    }
+  }
+}
+
+
+
 
 
