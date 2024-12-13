@@ -1,21 +1,16 @@
-* {
-  box-sizing: border-box;
-}
-
-
 body {
   background-color: var(--background);
+  --header-size: 9rem;
 }
 
 button { cursor: pointer; }
-
 /* header */
 header {
   position: relative;
-  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   width: 100%;
+  height: var(--header-size);
   padding: 0 3.2rem;
 }
 
@@ -90,7 +85,7 @@ section {}
   padding: 0 7rem;    
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  position: relative;
 }
 .slide--upper-wrapper {
   display: flex;
@@ -122,4 +117,15 @@ section {}
   text-transform: uppercase;
   border: 1px solid blue;
   margin-bottom: 7rem;
+}
+
+.slide__bullet {
+  position: absolute;
+  bottom: 3.7rem;
+  left: 50%;
+  transform: translate(-50% 50%);
+}
+.slide__bullet > img {
+  width: 5.8rem;
+  height: 1rem;
 }

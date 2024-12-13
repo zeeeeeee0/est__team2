@@ -1,0 +1,7 @@
+<svg width="58" height="10" viewBox="0 0 58 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="rs-bullets">
+<rect id="rs-bullet" x="0.5" y="0.5" width="9" height="9" rx="4.5" stroke="white"/>
+<rect id="rs-bullet_2" x="24.5" y="0.5" width="9" height="9" rx="4.5" stroke="white"/>
+<rect id="rs-bullet_3" x="48.5" y="0.5" width="9" height="9" rx="4.5" fill="white" stroke="white"/>
+</g>
+</svg>
