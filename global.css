@@ -75,3 +75,15 @@ html, body {
 	width: 100%;
 	box-sizing: border-box;
 }
+
+:root {
+  --background: #131619;
+  --font: "Heebo", sans-serif;
+  --altFont: "Yantramanav", serif;
+  --fontBlack: #000;
+  --fontWhite: #FFF;
+  --fontGrey: #c4c4c4;
+  --bgWhite: #FFF;
+  --bgBlack: #000;
+	--pointColor: #affe02;
+}
