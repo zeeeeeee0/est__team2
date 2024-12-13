@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 
 body {
   background-color: var(--background);
@@ -66,4 +70,56 @@ header > .utility > .btn {
   align-items: center;
   background-color: transparent;
   border: none;
+}
+
+/* main */
+main {}
+section {}
+
+/* slider section */
+.slide-wrapper {
+  width: 100%;
+  height: calc(100vh - 9rem);
+  border: 1px solid blue;
+}
+.slide {}
+.slide-information {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 0 7rem;    
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+.slide--upper-wrapper {
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+  align-items: end;
+}
+.slide--img {
+}
+.slide--img > img { width: 19.4rem; height: 19.4rem;}
+
+.slide--small-text {
+  margin-left: 3rem;
+  color: var(--fontWhite);
+  font-family: var(--font);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.8rem; /* 126.667% */
+  text-transform: uppercase;
+}
+
+.slide--big-text {
+  width: 100%;
+  height: 35rem;
+  color: var(--fontWhite);
+  font-family: var(--font);
+  font-size: 36rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid blue;
+  margin-bottom: 7rem;
 }
