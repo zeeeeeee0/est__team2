@@ -178,7 +178,6 @@ header > .utility .btn {
   align-items: center;
   background-color: transparent;
   border: none;
-  /* z-index: 20; */
 }
 
 header > .utility > #hamburger {
@@ -186,6 +185,20 @@ header > .utility > #hamburger {
 }
 
 @media all and (max-width: 1300px) {
+  header > .gnb > ul {
+    gap: 3rem;
+  }
+}
+
+@media all and (max-width: 1300px) and (min-width: 800px) {
+    header > .utility > .btn-book {
+    background-color: transparent;
+    color: var(--fontWhite);
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid var(--fontWhite);
+    padding: 0;
+  }
 }
 
 @media all and (max-width: 800px) {
@@ -222,12 +235,12 @@ header > .utility > #hamburger {
     transform: translate(-50%,0);
   }
   /* utility */
-  .btn-book {
+  header > .utility > .btn-book {
     display: none;
   }
   #btn-hamburger {
     z-index: 12;
-    position: fixed;
+    /* position: fixed; */
     right: 4rem;
   }
   /* utility . checked */
@@ -236,6 +249,9 @@ header > .utility > #hamburger {
     z-index: 12;
     position: fixed;
     right: 10rem;
+  }
+  header > .utility:has(#hamburger:checked) > #btn-hamburger {
+    position: fixed;
   }
 }
 
