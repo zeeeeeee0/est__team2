@@ -456,4 +456,51 @@ header > .utility > .btn {
   }
 }
 
+.section-map  {
+  width: 100%;
+  height: 60rem;
+  background-color: var(--bgBlack);
+  display: flex;
+  .map-container {
+    width: 50%;
+    img  {
+      width: 100%;
+      height: 100%;
 
+    }
+  }
+  .text-wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .lg-text {
+      &&::after {
+        font-size: 11.2rem;
+        line-height: 11.2rem; /* 100% */
+        content: "look";
+        left: 3.5rem;
+      }
+    }
+    .sm-text  {
+      color: #C4C4C4;
+      text-align: center;
+      font-family: var(--font);
+      font-size: 1.6rem;
+      font-weight: 300;
+      line-height: 2.8rem; /* 175% */
+      letter-spacing: 0.08rem;
+      margin-bottom: 3.7rem;
+    }
+    .btn-viewMore {
+      display: inline-flex;
+      padding: 1.4rem 8rem 1.4rem 3.2rem;
+      font-size: 1.3rem;
+      font-weight: 700;
+      line-height: 2.6rem; /* 200% */
+      letter-spacing: 0.13rem;
+      text-transform: uppercase;
+    }
+  }
+}
