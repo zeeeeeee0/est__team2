@@ -152,45 +152,6 @@ header > .utility > .btn {
     .lg-text {
       width: 48.1416rem;
       height: 11.1rem;
-      color: #FFF;
-      font-family: var(--font);
-      font-size: 4rem;
-      font-weight: 700;
-      line-height: 5.2rem; /* 130% */
-      text-transform: uppercase;
-      margin-bottom: 1.4rem;
-      position: relative;
-      &::before {
-        content: "";
-        background-image: url(images/ico_plus.svg);
-        width: 2.6rem;
-        height: 4rem;
-        display: inline-block;
-        position: absolute;
-        left: -0.8rem;
-        top: 0.1rem;
-        translate: -100% 0;
-      }
-      &::after {
-        content: "";
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #404040;
-        font-family: var(--altFont);
-        font-size: 11.2rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 11.2rem; /* 100% */
-        text-transform: uppercase;
-        color: transparent;
-        position: absolute;
-        height: 14.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: -4.5rem;
-        left: -7rem;
-        z-index: -1;
-      }
     }
     .sm-text {
       color: var(--fontGrey);
@@ -236,6 +197,48 @@ header > .utility > .btn {
   .split--img {
     width: 51.8rem;
     height: 76.0156rem;
+  }
+}
+
+.lg-text {
+  color: var(--fontWhite);
+  font-family: var(--font);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5.2rem; /* 130% */
+  text-transform: uppercase;
+  margin-bottom: 1.4rem;
+  position: relative;
+  &::before {
+    content: "";
+    background-image: url(images/ico_plus.svg);
+    width: 2.6rem;
+    height: 4rem;
+    display: inline-block;
+    position: absolute;
+    left: -0.8rem;
+    top: 0.1rem;
+    translate: -100% 0;
+  }
+  &::after {
+    content: "";
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #404040;
+    font-family: var(--altFont);
+    font-size: 11.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 11.2rem; /* 100% */
+    text-transform: uppercase;
+    color: transparent;
+    position: absolute;
+    height: 14.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -4.5rem;
+    left: -7rem;
+    z-index: -1;
   }
 }
 
@@ -315,13 +318,13 @@ header > .utility > .btn {
   }
 }
 
-.section-joinUs {
+.section-video {
   width: 100%;
   height: 90rem;
   display: flex;
   flex-direction: column;
   justify-content: end;
-  background: url(images/joinUs_img.png) no-repeat;
+  background: url(images/video_bg_img.png) no-repeat;
   position: relative;
   > img {
     position: absolute;
@@ -331,7 +334,7 @@ header > .utility > .btn {
     width: 96rem;
     height: 60rem;
   }
-  .joinUs--play {
+  .video--play {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -359,6 +362,16 @@ header > .utility > .btn {
       }
     }
   }
+}
+
+.section-form {
+  display: flex;
+  width: 130rem;
+  margin: 0 auto;
+  margin-top: 15.5rem;
+  height: 34.8rem;
+  background-color: red;
+  
   .joinUs--text {
     display: flex;
     justify-content: center;
@@ -380,9 +393,15 @@ header > .utility > .btn {
     }
     translate: 0 15.5rem;
   }
+
+  .lg-text {
+  }
+  .sm-text {}
+  .input-wrapper {
+    #input-name {}
+    #input-email {}
+    #btn-subscribe {}
+  }
 }
-
-
-
 
 
