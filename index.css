@@ -1,4 +1,4 @@
-/* @@@@@@@@@@@@@@@@@@ */
+/* start @@@@@@@@@@@@@@@@@@ */
 
 :root {
   --background: #131619;
@@ -11,8 +11,8 @@
   --bgBlack: #000;
 	--pointColor: #affe02;
 }
+/* end @@@@@@@@@@@@@@@@@@ */
 
-/* @@@@@@@@@@@@@@@@@@ */
 
 body {
   background-color: var(--background);
@@ -29,6 +29,94 @@ body {
 
 button { cursor: pointer; }
 
+/* 공통  */
+.lg-text {
+  color: var(--fontWhite);
+  font-family: var(--font);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5.2rem; /* 130% */
+  text-transform: uppercase;
+  margin-bottom: 1.4rem;
+  position: relative;
+  &::before {
+    content: "";
+    background-image: url(images/ico_plus.svg);
+    background-size: cover;
+    background-position: center;
+    width: 2.6rem;
+    height: 4rem;
+    display: inline-block;
+    position: absolute;
+    left: -0.8rem;
+    top: 0.1rem;
+    translate: -100% 0;
+  }
+  &::after {
+    content: "";
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #404040;
+    font-family: var(--altFont);
+    font-size: 11.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 11.2rem; /* 100% */
+    text-transform: uppercase;
+    color: transparent;
+    position: absolute;
+    height: 14.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -4.5rem;
+    left: -7rem;
+    z-index: -1;
+  }
+}
+
+.btn-arrow {
+  position: relative;
+  display: inline-flex;
+  align-items: flex-start;
+  border-radius: 3rem;
+  border: 1px solid var(--fontWhite);
+  cursor: pointer;
+  color: var(--fontWhite);
+  font-family: var(--font);
+
+  &::after {
+    content: "";
+    background: url("images/ico_viewMore.svg") no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 5.4rem;
+    height: 5.4rem;
+    border-radius: 2.7rem;
+    position: absolute;
+    right: 0;
+    top: -.1rem;
+    border: 1px solid var(--fontWhite);
+  }
+}
+
+input {
+  color: white;
+  background-color: transparent;
+  display: inline-flex;
+  padding: 1.5rem 2.5rem;
+  align-items: flex-start;
+  color: var(--fontGrey);
+  font-family: var(--font);
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.08rem;
+  border-radius: 3rem;
+  border: 1px solid #404040;
+  outline: none;
+}
+
 /* header */
 header {
   position: relative;
@@ -40,6 +128,7 @@ header {
 }
 header > h1 { margin: 3.25rem ;}
 header > h1 > img { width: 13.5rem; height: 2.5rem; }
+
 header > .gnb {
   position: absolute;
   top: 50%;
@@ -47,10 +136,13 @@ header > .gnb {
   transform:translate(-50%,-50%);
 }
 header > .gnb > ul {
-display: flex;
-align-items: center;
-gap: 6.3rem;
-height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 6.3rem;
+  height: 100%;
+}
+header > .gnb > ul > li#bookNow {
+  display: none;
 }
 header > .gnb > ul > li > a {
   font-family: var(--font);
@@ -78,7 +170,7 @@ header > .utility > .btn-book {
   letter-spacing: 0.12rem;
   text-transform: uppercase;
 }
-header > .utility > .btn {
+header > .utility .btn {
   display: flex;
   width: 4rem;
   height: 4rem;
@@ -86,6 +178,65 @@ header > .utility > .btn {
   align-items: center;
   background-color: transparent;
   border: none;
+  /* z-index: 20; */
+}
+
+header > .utility > #hamburger {
+  display: none;
+}
+
+@media all and (max-width: 1300px) {
+}
+
+@media all and (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+  /* gnb */
+  header > .gnb {
+    display: none;
+  }
+  header > .gnb > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  header > .gnb > ul  > li  {}
+  header > .gnb > ul > li > a {
+    font-size: 4rem;
+    line-height: 1;
+  }
+  /* gnb . checked */
+  header > .utility:has(#hamburger:checked) ~ .gnb {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    z-index: 10;
+    background-color: var(--background);
+    transform: translate(-50%,0);
+  }
+  /* utility */
+  .btn-book {
+    display: none;
+  }
+  #btn-hamburger {
+    z-index: 12;
+    position: fixed;
+    right: 4rem;
+  }
+  /* utility . checked */
+  header > .utility:has(#hamburger:checked) > .btn-book {
+    display: inline-block;
+    z-index: 12;
+    position: fixed;
+    right: 10rem;
+  }
 }
 
 /* hero section */
@@ -182,94 +333,6 @@ header > .utility > .btn {
     width: 51.8rem;
     height: 76.0156rem;
   }
-}
-
-/* 공통  */
-.lg-text {
-  color: var(--fontWhite);
-  font-family: var(--font);
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 5.2rem; /* 130% */
-  text-transform: uppercase;
-  margin-bottom: 1.4rem;
-  position: relative;
-  &::before {
-    content: "";
-    background-image: url(images/ico_plus.svg);
-    background-size: cover;
-    background-position: center;
-    width: 2.6rem;
-    height: 4rem;
-    display: inline-block;
-    position: absolute;
-    left: -0.8rem;
-    top: 0.1rem;
-    translate: -100% 0;
-  }
-  &::after {
-    content: "";
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #404040;
-    font-family: var(--altFont);
-    font-size: 11.2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 11.2rem; /* 100% */
-    text-transform: uppercase;
-    color: transparent;
-    position: absolute;
-    height: 14.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: -4.5rem;
-    left: -7rem;
-    z-index: -1;
-  }
-}
-
-.btn-arrow {
-  position: relative;
-  display: inline-flex;
-  align-items: flex-start;
-  border-radius: 3rem;
-  border: 1px solid var(--fontWhite);
-  cursor: pointer;
-  color: var(--fontWhite);
-  font-family: var(--font);
-
-  &::after {
-    content: "";
-    background: url("images/ico_viewMore.svg") no-repeat;
-    background-position: center center;
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    width: 5.4rem;
-    height: 5.4rem;
-    border-radius: 2.7rem;
-    position: absolute;
-    right: 0;
-    top: -.1rem;
-    border: 1px solid var(--fontWhite);
-  }
-}
-
-input {
-  color: white;
-  background-color: transparent;
-  display: inline-flex;
-  padding: 1.5rem 2.5rem;
-  align-items: flex-start;
-  color: var(--fontGrey);
-  font-family: var(--font);
-  font-size: 1.6rem;
-  font-weight: 300;
-  letter-spacing: 0.08rem;
-  border-radius: 3rem;
-  border: 1px solid #404040;
-  outline: none;
 }
 
 /*  */
