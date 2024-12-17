@@ -190,6 +190,8 @@ header > .utility > .btn {
   &::before {
     content: "";
     background-image: url(images/ico_plus.svg);
+    background-size: cover;
+    background-position: center;
     width: 2.6rem;
     height: 4rem;
     display: inline-block;
@@ -403,7 +405,14 @@ header > .utility > .btn {
   .lg-text {
     font-size: 6rem;
     margin-bottom: 3rem;
-    &&::after {
+    border: 1px solid red;
+    &::before {
+      width: 3.4rem;
+      transform: translate(0,-50%);
+      top: 0.4rem;
+      border: 1px solid red;
+    }
+    &::after {
       font-size: 18rem;
       line-height: 18rem; /* 100% */
       content: "go!";
@@ -515,6 +524,12 @@ header > .utility > .btn {
     font-size: 6rem;
     /* margin-bottom: 3rem; */
     line-height: 7.2rem; /* 120% */
+    &::before {
+      width: 3.4rem;
+      transform: translate(0,-50%);
+      top: 0.4rem;
+      border: 1px solid red;
+    }
     &&::after {
       font-size: 18rem;
       line-height: 18rem; /* 100% */
