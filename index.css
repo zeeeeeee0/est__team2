@@ -286,6 +286,7 @@ header > .utility > .btn {
 }
 
 .section-partners {
+  background-color: var(--bgBlack);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
