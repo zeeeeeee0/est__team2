@@ -1,0 +1,619 @@
+/* 앵커 초기화 */
+a {
+
+    transition: all 1s;
+}
+
+a:visited,
+a:link {
+    color: var(--fontWhite);
+    text-decoration: none;
+}
+
+/* 포인트 색상 */
+.point {
+    color: var(--pointColor);
+}
+
+/* 바디 */
+body {
+    background-color: var(--background);
+    font-family: var(--font);
+    color: var(--fontWhite);
+    font-weight: 700;
+}
+
+/* 헤더 */
+.header {
+    height: 9rem;
+    background-color: var(--bgWhite);
+}
+
+
+/* 타이틀 */
+.title {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    color: var(--fontWhite);
+    height: 98.5rem;
+    margin-left: 7.1rem;
+}
+
+.title-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.title__icon {
+    height: 19.4rem;
+    display: inline-block;
+}
+
+.title__icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.title__week {
+    margin-left: 3rem;
+    display: inline-block;
+    font-size: 3rem;
+    line-height: 3.8rem;
+    text-transform: uppercase;
+}
+
+.title__main h1 {
+    font-size: 12rem;
+    text-transform: uppercase;
+}
+
+.title__main h1 p {
+    font-size: 16rem;
+    text-transform: uppercase;
+}
+
+
+/* 메인 컨텐츠 */
+.main-contents {
+    background-color: var(--bgBlack);
+    height: 63.7156rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.main-contents-containar {
+    max-width: 130rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-contents-box {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.back-text {
+    position: absolute;
+    top: -6rem;
+    color: var(--bgBlack);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--pointColor);
+    opacity: 0.1;
+    font-size: 11.2rem;
+    font-weight: 700;
+    line-height: 11.2rem;
+    text-transform: uppercase;
+}
+
+
+
+.textarea {
+    color: var(--fontGrey);
+    font-size: 1rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.08rem;
+}
+
+.textarea__title {
+    font-size: 7rem;
+    position: absolute;
+    top: 13rem;
+}
+
+.main-contents-1 {
+    color: var(--fontGrey);
+    font-size: 1.5rem;
+
+}
+
+.contents-imgbox {
+    max-width: 40%;
+    height: 70rem;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.contents-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-contents__text {
+    margin-top: 5rem;
+    margin-left: 3rem;
+
+}
+
+/* 드롭다운 */
+.dropdown-container {
+    position: relative;
+    top: 7rem;
+}
+
+.dropdown-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background);
+    color: var(--fontWhite);
+    padding: 1.4rem;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+    gap: 1rem;
+    transition: all 0.5s ease;
+}
+
+.dropdown-label:hover {
+    background-color: var(--fontGrey);
+}
+
+.arrow {
+    display: inline-block;
+    min-width: 1rem;
+    min-height: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border-right: 1rem solid var(--pointColor);
+    border-bottom: 1rem solid var(--pointColor);
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+}
+
+
+.dropdown-content {
+    max-height: 0;
+    max-width: 70rem;
+    overflow: hidden;
+    background-color: var(--bgWhite);
+    color: var(--bgBlack);
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    transition: all 0.5s ease;
+}
+
+.dropdown-title:hover+.dropdown-content,
+.dropdown-title:hover .arrow+.dropdown-content {
+    max-height: 20rem;
+    padding: 1rem 1rem;
+}
+
+
+.dropdown-title:hover .arrow {
+    transform: rotate(225deg);
+}
+
+/* 세컨드 컨텐츠 */
+.second-back-text {
+    position: absolute;
+    top: 15rem;
+    color: var(--bgBlack);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--pointColor);
+    opacity: 0.1;
+    font-size: 11.2rem;
+    font-weight: 700;
+    line-height: 11.2rem;
+    text-transform: uppercase;
+}
+
+.second-contents__main {
+    height: 55rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url(./images/img-title1.jpg);
+    object-fit: cover;
+
+}
+
+
+.second-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.contents-containar {
+    max-width: 130rem;
+    margin: 0 auto;
+}
+
+.second-contents__title {
+    font-size: 12rem;
+    text-transform: uppercase;
+}
+
+
+
+.second-contents_gymbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 19rem;
+}
+
+.second-contents__img {
+
+    width: 50rem;
+    min-width: 35rem;
+    height: 40rem;
+    flex: 1;
+    object-fit: cover;
+}
+
+.second-contents__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.second-contents__titlebox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.second-contents__titlebox__main {
+    font-size: 5rem;
+    color: var(--fontWhite);
+    padding: 3rem;
+}
+
+.second-contents__titlebox__sub {
+    max-width: 100rem;
+    font-size: 2rem;
+    color: var(--fontGrey);
+    padding: 4rem;
+    line-height: 2.5rem;
+}
+
+.btn-arr {
+    padding: 0rem 5rem;
+}
+
+.second-contents__titlebox__arr {
+    display: inline-flex;
+    align-items: center;
+    padding: 1.6rem 7rem 1.6rem 5rem;
+    border-radius: 3rem;
+    border: .1rem solid var(--fontWhite);
+    position: relative;
+    font-size: 2rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.btn-arr_sub {
+    display: flex;
+    align-items: center;
+    padding: 1.6rem;
+    border-radius: 3rem;
+    border: .1rem solid var(--fontGrey);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.btn-arr_sub img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.btn-arr:hover .btn-arr_sub img {
+    transform: rotate(45deg);
+    transition: all 0.5s;
+}
+
+/* 써드 컨텐츠 */
+.third-contents__main {
+    height: 55rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 10rem;
+    background: url(./images/img-contents2.jpg);
+}
+
+.third-contents__title {
+    font-size: 10rem;
+    text-transform: uppercase;
+}
+
+.third-contents__coachbox {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    margin: 5rem auto;
+}
+
+.third-contents__coachcard {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem var(--bgBlack);
+    max-width: 45%;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.coach-name {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.coach-ex {
+    font-size: 2rem;
+    margin: 3rem 2rem;
+}
+
+.coach-clip {
+
+    font-size: 0rem;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.third-contents__coachcard:hover .coach-clip {
+    font-size: 4rem;
+}
+
+.coach-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25.4rem;
+    min-width: 10rem;
+    height: 25.4rem;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    aspect-ratio: 1 / 1;
+}
+
+.coach-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.coach-click {
+    position: absolute;
+    border-radius: 50%;
+    border: .1rem solid var(--bgWhite);
+    width: 6rem;
+    height: 6rem;
+}
+
+.coach-click img {
+    width: 100%;
+    height: auto;
+}
+
+.coach-img:hover .coach-click img {
+    cursor: pointer;
+    transform: rotate(-45deg);
+    transition: all .5s;
+
+}
+
+/* 풋터 */
+
+/* 미디어 쿼리 1300 */
+@media all and (max-width: 1300px) {
+
+    /* 1300 title  */
+    .title {
+        height: 70rem;
+        margin: 0 auto
+    }
+
+    .title__icon {
+        height: 15rem;
+    }
+
+    .title__week {
+        font-size: 3rem;
+    }
+
+    .title__main h1 {
+        font-size: 9rem;
+    }
+
+    .title__main h1 p {
+        font-size: 12rem;
+    }
+
+    /* 1300 title end */
+
+
+    .textarea__title {
+        font-size: 5rem;
+    }
+
+    .second-contents__title {
+        font-size: 10rem;
+    }
+
+    .third-contents__coachcard {
+        max-width: 70%;
+    }
+
+    .back-text {
+        font-size: 7rem;
+    }
+
+    .textarea__title {
+        font-size: 4rem;
+    }
+
+    .second-contents_gymbox {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .second-back-text {
+        font-size: 7rem;
+    }
+}
+
+/* 미디어쿼리 800 */
+
+
+@media all and (max-width: 800px) {
+
+    .main-contents {
+        padding: 0 1rem;
+    }
+
+    .main-contents-containar {
+        max-width: 80rem;
+    }
+
+    .title {
+        height: 50rem;
+    }
+
+    .title__icon {
+        height: 5rem;
+    }
+
+    .title__week {
+        font-size: 2rem;
+    }
+
+    .title__main h1 {
+        font-size: 5rem;
+        text-transform: uppercase;
+    }
+
+    .title__main h1 p {
+        font-size: 6.7rem;
+    }
+
+
+    .second-contents__title,
+    .third-contents__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .back-text {
+        font-size: 5rem;
+    }
+
+    .textarea__title {
+        font-size: 3rem;
+    }
+
+    .main-contents__text {
+        margin: 0;
+    }
+
+    .main-contents-1 {
+        margin-top: 3rem;
+    }
+
+    .main-contents__text {
+        margin-left: 0rem;
+    }
+
+    .dropdown-title {
+
+        font-size: 1.5rem;
+    }
+
+
+    .dropdown-title:hover+.dropdown-content,
+    .dropdown-title:hover .arrow+.dropdown-content {
+        max-height: 20rem;
+    }
+
+    .contents-imgbox:nth-child(1) {
+        display: none;
+    }
+
+
+    .contents-containar {
+        max-width: 80rem;
+    }
+
+    .second-contents_gymbox {
+        padding: 0;
+    }
+
+    .second-contents__img {
+        max-width: 30rem;
+        min-width: 30rem;
+
+    }
+
+    .second-contents__titlebox__main {
+        padding: 2rem;
+        font-size: 3rem;
+    }
+
+    .second-contents__titlebox__sub {
+        font-size: 1.3rem;
+
+    }
+
+
+    .coach-name {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .coach-ex {
+        font-size: 1.5rem;
+        margin: 1.5rem;
+    }
+
+    .third-contents__coachcard:hover .coach-clip {
+        font-size: 2rem;
+    }
+
+}
