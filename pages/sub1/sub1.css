@@ -1,8 +1,8 @@
 /* 앵커 초기화 */
 a {
-
     transition: all 1s;
 }
+
 
 a:visited,
 a:link {
@@ -23,11 +23,6 @@ body {
     font-weight: 700;
 }
 
-/* 헤더 */
-.header {
-    height: 9rem;
-    background-color: var(--bgWhite);
-}
 
 
 /* 타이틀 */
@@ -36,13 +31,15 @@ body {
     justify-content: baseline;
     align-items: center;
     color: var(--fontWhite);
-    height: 98.5rem;
+    height: 74.5rem;
     margin-left: 7.1rem;
 }
 
 .title-box {
     display: flex;
+    justify-content: center;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 .title__icon {
@@ -147,7 +144,7 @@ body {
 }
 
 .main-contents__text {
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-left: 3rem;
 
 }
@@ -178,31 +175,32 @@ body {
 
 .arrow {
     display: inline-block;
-    min-width: 1rem;
-    min-height: 1rem;
+    min-width: 2rem;
+    min-height: 2rem;
     width: 2rem;
     height: 2rem;
     border-right: 1rem solid var(--pointColor);
     border-bottom: 1rem solid var(--pointColor);
     transform: rotate(45deg);
-    transition: all 0.3s ease;
+    transition: all .03s ease-out;
+
 }
 
 
 .dropdown-content {
     max-height: 0;
-    max-width: 70rem;
+    max-width: 60rem;
     overflow: hidden;
     background-color: var(--bgWhite);
     color: var(--bgBlack);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding: 0 1rem;
     transition: all 0.5s ease;
 }
 
 .dropdown-title:hover+.dropdown-content,
 .dropdown-title:hover .arrow+.dropdown-content {
-    max-height: 20rem;
+    max-height: 60rem;
     padding: 1rem 1rem;
 }
 
@@ -244,6 +242,8 @@ body {
     position: relative;
 }
 
+
+
 .contents-containar {
     max-width: 130rem;
     margin: 0 auto;
@@ -262,20 +262,20 @@ body {
     align-items: center;
     margin: 0 auto;
     margin-top: 19rem;
+    padding: 1rem;
 }
 
 .second-contents__img {
-
     width: 50rem;
     min-width: 35rem;
     height: 40rem;
-    flex: 1;
     object-fit: cover;
 }
 
 .second-contents__img img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .second-contents__titlebox {
@@ -290,6 +290,10 @@ body {
     font-size: 5rem;
     color: var(--fontWhite);
     padding: 3rem;
+}
+
+.second-contents__titlebox:hover .second-contents__titlebox__main span {
+    color: var(--pointColor);
 }
 
 .second-contents__titlebox__sub {
@@ -307,7 +311,7 @@ body {
 .second-contents__titlebox__arr {
     display: inline-flex;
     align-items: center;
-    padding: 1.6rem 7rem 1.6rem 5rem;
+    padding: 1.6rem 6rem 1.6rem 5rem;
     border-radius: 3rem;
     border: .1rem solid var(--fontWhite);
     position: relative;
@@ -438,10 +442,9 @@ body {
     cursor: pointer;
     transform: rotate(-45deg);
     transition: all .5s;
-
 }
 
-/* 풋터 */
+
 
 /* 미디어 쿼리 1300 */
 @media all and (max-width: 1300px) {
@@ -516,7 +519,7 @@ body {
 
     .main-contents-containar {
         max-width: 80rem;
-        margin: 0 .5rem;
+        margin: 0 .1rem;
     }
 
     .title {
@@ -529,7 +532,7 @@ body {
 
     .title__week {
         font-size: 2rem;
-        margin-left: 2rem;
+        margin-left: 1rem;
     }
 
     .title__main h1 {
@@ -538,7 +541,7 @@ body {
     }
 
     .title__main h1 p {
-        font-size: 6.7rem;
+        font-size: 6.5rem;
     }
 
     .second-contents__main,
@@ -577,15 +580,11 @@ body {
     }
 
     .dropdown-title {
-
         font-size: 1.5rem;
     }
 
 
-    .dropdown-title:hover+.dropdown-content,
-    .dropdown-title:hover .arrow+.dropdown-content {
-        max-height: 20rem;
-    }
+
 
     .contents-imgbox:nth-child(1) {
         display: none;
@@ -603,7 +602,6 @@ body {
     .second-contents__img {
         max-width: 30rem;
         min-width: 30rem;
-
     }
 
     .second-contents__titlebox__main {
