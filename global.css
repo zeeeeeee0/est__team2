@@ -19,7 +19,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 
@@ -111,7 +110,7 @@ header {
   padding: 0 3.2rem;
 }
 header > h1 { margin: 3.25rem ;}
-header > h1 > img { width: 13.5rem; height: 2.5rem; }
+header > h1 > a > img { width: 13.5rem; height: 2.5rem; }
 header > .gnb {
   position: absolute;
   top: 50%;
@@ -168,13 +167,17 @@ header > .utility > #hamburger {
 }
 
 @media all and (max-width: 1300px) {
+  header > h1 { 
+    margin-left: 0rem ;
+  }
   header > .gnb > ul {
     gap: 3rem;
   }
 }
 
 @media all and (max-width: 1300px) and (min-width: 800px) {
-    header > .utility > .btn-book {
+
+  header > .utility > .btn-book {
     background-color: transparent;
     color: var(--fontWhite);
     border-radius: 0;
@@ -346,6 +349,22 @@ footer {
   width: 1.63rem;
   height: 1.63rem;    
 }
+.footer__input {
+  color: white;
+  background-color: transparent;
+  display: inline-flex;
+  padding: 1.5rem 2.5rem;
+  align-items: flex-start;
+  color: var(--fontGrey);
+  font-family: var(--font);
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.08rem;
+  border-radius: 3rem;
+  border: 1px solid #404040;
+  outline: none;
+}
+
 .footer__item__icon-wrapper {
   height: 2rem;
   margin-top: 5rem;
@@ -376,6 +395,12 @@ footer {
   }
   .footer__logo {
     grid-column: 1/5;
+    width: 18.3rem;
+    object-fit: cover;
+  }
+  .footer__logo img {
+    width: 100%;
+
   }
   .footer__text {
     grid-column: 1/5;
