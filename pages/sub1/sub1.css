@@ -90,6 +90,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 7.1rem;
 }
 
 .main-contents-box {
@@ -406,6 +407,7 @@ body {
     width: 25.4rem;
     min-width: 10rem;
     height: 25.4rem;
+    min-height: 5rem;
     overflow: hidden;
     border-radius: 50%;
     position: relative;
@@ -443,11 +445,15 @@ body {
 
 /* 미디어 쿼리 1300 */
 @media all and (max-width: 1300px) {
+    .main-contents {
+        padding: 0 3.2rem;
+    }
 
     /* 1300 title  */
     .title {
         height: 70rem;
-        margin: 0 auto
+        margin: 0 auto;
+        padding: 3.2rem;
     }
 
     .title__icon {
@@ -505,11 +511,12 @@ body {
 @media all and (max-width: 800px) {
 
     .main-contents {
-        padding: 0 1rem;
+        padding: 0 3.2rem;
     }
 
     .main-contents-containar {
         max-width: 80rem;
+        margin: 0 .5rem;
     }
 
     .title {
@@ -522,6 +529,7 @@ body {
 
     .title__week {
         font-size: 2rem;
+        margin-left: 2rem;
     }
 
     .title__main h1 {
@@ -533,9 +541,15 @@ body {
         font-size: 6.7rem;
     }
 
+    .second-contents__main,
+    .third-contents__main {
+        height: 44rem;
+
+    }
 
     .second-contents__title,
     .third-contents__title {
+        font-size: 7rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -555,6 +569,7 @@ body {
 
     .main-contents-1 {
         margin-top: 3rem;
+        font-size: 1rem;
     }
 
     .main-contents__text {
@@ -592,8 +607,9 @@ body {
     }
 
     .second-contents__titlebox__main {
+        text-align: center;
         padding: 2rem;
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .second-contents__titlebox__sub {
@@ -601,6 +617,10 @@ body {
 
     }
 
+    .coach-img {
+        height: 15rem;
+        width: 15rem;
+    }
 
     .coach-name {
         font-size: 3rem;
