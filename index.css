@@ -117,7 +117,7 @@ button { cursor: pointer; }
   top: -.1rem;
   border: 1px solid var(--fontWhite);
   transform: rotate(0deg);
-  transition: transform 1s ease;
+  transition: transform 0.3s ease-out; 
 }
 .btn--arrow:hover::after {
   transform: rotate(45deg);
@@ -172,7 +172,7 @@ input {
   max-height: 19.4rem;
 }
 
-.slide__small-text {
+.slide__text--sm {
   margin-left: 3rem;
   color: var(--fontWhite);
   font-family: var(--font);
@@ -181,17 +181,15 @@ input {
   line-height: 126.667%;
   text-transform: uppercase;
 }
-.slide__big-text {
+.slide__text--lg {
   display: flex;
   justify-content: flex-start;
-  align-items: ;
   max-width: 100%;
   width: 100%;
   max-height: 35rem;
   height: fit-content;
   color: var(--fontWhite);
   font-family: var(--font);
-  font-size: 36rem;
   font-size: clamp(10rem, 18vw, 36rem);
   font-weight: 700;
   text-transform: uppercase;
@@ -215,10 +213,54 @@ input {
   .slide__image {
     margin-bottom: 1rem;
   }
-  .slide__small-text {
+  .slide__text--sm {
     margin-left: 2rem;
   }
 }
+@media all and (max-width: 800px) {
+  .slider__slide--information {
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  .slide__upper-wrapper {
+    flex-grow: 0;
+    align-items: start;
+  }
+  .slide__text--sm {
+    font-size: 6vw;
+  }
+  .slide__text--lg {
+    flex-grow: 1;
+    width: 100%;
+    max-height: none;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    font-size: 20vw;
+    transform: rotate(-8deg);
+    translate: 0 5vw;
+    /* transform-origin: top left; */
+    padding: 0;
+    margin: 0;
+    position: relative;
+    text-shadow: 
+      0px  15vw   0px rgba(255,   0,   0, 0.8),   /* 빨간색 */
+      0px  30vw   0px rgba(255, 165,   0, 0.8), /* 주황색 */
+      0px  45vw   0px rgba(255, 255,   0, 0.8), /* 노란색 */
+      0px  60vw   0px rgba(  0, 128,   0, 0.8),   /* 초록색 */
+      0px  75vw   0px rgba(  0,   0, 255, 0.8),   /* 파란색 */
+      0px  90vw   0px rgba( 75,   0, 130, 0.8),  /* 남색 */
+      0px  105vw   0px rgba(238, 130,238,  0.8),
+      0px  120vw   0px rgba(255,   0,   0, 0.8),   /* 빨간색 */
+      0px  135vw   0px rgba(255, 165,   0, 0.8), /* 주황색 */
+      0px  150vw   0px rgba(255, 255,   0, 0.8), /* 노란색 */
+      0px  165vw   0px rgba(  0, 128,   0, 0.8),   /* 초록색 */
+      0px  180vw   0px rgba(  0,   0, 255, 0.8)   /* 파란색 */
+      ; 
+
+  }
+  
+}
+
 
 /********************************/
 /*         split section        */
