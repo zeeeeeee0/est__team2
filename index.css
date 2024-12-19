@@ -786,6 +786,7 @@ input {
   line-height: 3.3rem; /* 165% */
   text-transform: uppercase;
   margin-bottom: 6.2rem;
+  text-align: center;
 }
   
 .family__image--wrapper {
@@ -810,7 +811,7 @@ input {
   .family__text--lg::after {
     font-size: 14rem;
     line-height: 14rem; /* 100% */
-    transform: translate();
+    transform: translate(-50%, 25%);
   }
 }
 
