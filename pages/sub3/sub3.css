@@ -9,11 +9,14 @@ h1, h2, h3, h4, h5, h6{
 }
 h1{font-size: 36rem;} h2{font-size: 18rem;} h3{font-size: 6rem;}
 h4{font-size: 4rem;} h5{font-size: 3rem;}
-body{font-family: var(--font);}
+body{font-family: var(--font); background-color: var(--background);}
 strong{
     font-family: var(--font);
     font-weight: 700;
     letter-spacing: 0.08rem;
+}
+header{
+    z-index: 999;
 }
 span{
     font-family: var(--font);
@@ -850,6 +853,15 @@ section{
         top: -13rem;
     }
 } 
+@media all and (min-width: 801px) and (max-width:905px) {
+    .section-container {
+        width: 80rem;
+        max-width: 80rem;
+    }
+    .groupExercise .section__title {
+        top: -23rem;
+    }
+}
 @media all and (max-width: 800px) {
     html {
         font-size: 62.5%;
@@ -1021,6 +1033,7 @@ section{
     }
     .ptStage__box .ptStage__copy {
         display: block;
+        width: 90%;
         height: 100%;
         background: #000;
         opacity: .8;

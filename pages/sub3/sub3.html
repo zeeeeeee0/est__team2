@@ -5,10 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../global.css">
     <link rel="stylesheet" href="./sub3.css">
+    <link rel="stylesheet" href="../../global.css">
 </head>
 <body>
+    <header>
+        <h1 class="logo">
+          <a href="">
+            <img src="../../images/logo.png" alt="KROPP">
+          </a>
+        </h1>
+        <h2 class="a11y-hidden">메뉴</h2>
+        <div class="utility">
+          <button class="btn-book">Book now</button>
+          <input id="hamburger" type="checkbox">
+          <label for="hamburger" id="btn-hamburger">
+            <div class="btn"><img src="../../images/ico_what.svg" alt="what"></div>
+          </label>
+        </div>
+        <nav class="gnb">
+            <ul>
+              <li><a href="../../index.html" target="_blank" title="Open new window">Home</a></li>
+              <li><a href="../sub1/sub1.html" target="_blank" title="Open new window">ABOUT</a></li>
+              <li><a href="../sub3/sub3.html" target="_blank" title="Open new window">Curriculum</a></li>
+              <li><a href="../sub2/sub2.html" target="_blank" title="Open new window">members</a></li>
+            </ul>
+          </nav> 
+      </header>
     <section class="curriculum">
         <div class="section-container">
             <div class="curriculum__ornamental-word ornamental-word">
@@ -21,7 +44,7 @@
             <ul class="curriculum__boxlist">
                 <li class="curriculum__box">
                     <div class="curriculum__image">
-                        <img src="./img/curriculum-01.jpg" alt="">
+                        <img src="./img/curriculum-01.jpg" alt="woman lifting weights">
                     </div>
                     <div class="curriculum__content">
                         <strong class="curriculum__content-title">Training</strong>
@@ -36,7 +59,7 @@
                 </li>
                 <li class="curriculum__box">
                     <div class="curriculum__image">
-                        <img src="./img/curriculum-02.jpg" alt="">
+                        <img src="./img/curriculum-02.jpg" alt="man lifting weights">
                     </div>
                     <div class="curriculum__content">
                         <strong class="curriculum__content-title">Personal<br> Training</strong>
@@ -51,7 +74,7 @@
                 </li>
                 <li class="curriculum__box">
                     <div class="curriculum__image">
-                        <img src="./img/curriculum-03.jpg" alt="">
+                        <img src="./img/curriculum-03.jpg" alt="two women smiling">
                     </div>
                     <div class="curriculum__content">
                         <strong class="curriculum__content-title">Group<br> Exercise</strong>
@@ -71,7 +94,7 @@
     <section class="bg__training"></section>
 
     <section class="training">
-        <!-- <div class="section-container">     -->
+        <!-- <div class="section-container"> -->
             <h3 id="_training"  class="section__title">Training</h3>
             <div class="training__boxList">
                 <div class="training__box">
@@ -391,5 +414,42 @@
 
         </div>
     </section> -->
+
+    <footer>
+        <div class="footer__wrapper ">
+          <div class="footer__logo"><img src="../../images/logo.png" alt=""></div>
+          <span class="footer__text">please feel free to send us an e-mail at kropp@qodeinteractive.com For any additional inquiries</span>
+          <div class="footer__item" id="footer__item--about">
+            <div class="footer__item__title">About</div>
+            <div class="footer__item__body">Shape up your site with Kropp, a theme especially made for fitness &amp; gym websites.</div>
+          </div>
+          <div class="footer__item" id="footer__item--working-hours">
+            <div class="footer__item__title">Working hours</div>
+            <div class="footer__item__body">
+              <span>Monday - Friday<br>05:30 - 24:00</span>
+              <span>Weekdays<br>00:00 - 24:00</span>
+            </div>
+          </div>
+          <div class="footer__item" id="footer__item--location">
+            <div class="footer__item__title">Location</div>
+            <div class="footer__item__body">
+              <span>68 Jay Street, Brooklyn,<br>NY 11201, United States</span>
+              <span>kropp@qodeinteractive.com<br>+ (1) 718 - 407 - 6400</span>
+            </div>
+          </div>
+          <div class="footer__item" id="footer__item--start-now">
+            <div class="footer__item__title">start now</div>
+            <div class="btn--arrow"><input type="email" placeholder="Email"></div>
+            <div class="footer__item__icon-wrapper">
+              <a><img src="../../images/ico_ticktok.svg" alt=""></a>
+              <a><img src="../../images/ico_youtube.svg" alt=""></a>
+              <a><img src="../../images/ico_instagram.svg" alt=""></a>
+              <a><img src="../../images/ico_facebook.svg" alt=""></a>
+              <a><img src="../../images/ico_twitter.svg" alt=""></a>
+            </div>
+          </div>
+          <span class="footer__bottom-text">© 2022 Qode Interactive, All Rights Reserved | Privacy Policy | Contact Us</span>
+        </div>
+      </footer>
 </body>
 </html>
