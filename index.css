@@ -818,118 +818,152 @@ input {
 /********************************/
 /*          bmi section         */
 /********************************/
-.section-bmi {
+.section--bmi {
   width: 130rem;
   height: 72.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  .text-wrapper {
-    .lg-text {
-      &::after {
-        content: "BMI";
-    } 
-    }
-    .sm-text {
-      color: var(--fontGrey);
-      font-family: var(--font);
-      font-size: 1.6rem;
-      font-weight: 300;
-      line-height: 2.8rem; /* 175% */
-      letter-spacing: 0.08rem;
-      margin-bottom: 3.1rem;
-    }
-    .input-wrapper {
-      display: grid;
-      column-gap: 3rem;
-      row-gap: 1.8rem;
-      grid-template-columns: 1fr 1fr;
-      width: 62.7rem;
-      flex-shrink: 0;
-      margin-bottom: 2.6rem;
-      
-      input:last-of-type {
-        grid-column: 1/3;
-      }
-    }
-    #btn-bmiCalculate {
-      background-color: transparent;
-      display: inline-flex;
-      padding: 1.4rem 8.07rem 1.4rem 3.1rem;
-      align-items: flex-start;
-      border-radius: 3rem;
-      border: 1px solid #FFF;
-      color: #FFF;
-      font-size: 1.3rem;
-      line-height: 2.6rem; /* 200% */
-      letter-spacing: 0.13rem;
-      text-transform: uppercase;
-    }
-  }
-  .bmi-wrapper {
-    width: 61rem;
-    height: 61rem;
-    background-color: var(--bgBlack);
-    border-radius: 50%;
-    display: flex;
+}
+.bmi__text--wrapper {}
+.bmi__text--lg::after { 
+  content: "BMI"
+}
+.bmi__text--sm {
+  color: var(--fontGrey);
+  font-family: var(--font);
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.8rem; /* 175% */
+  letter-spacing: 0.08rem;
+  margin-bottom: 3.1rem;
+}
+.bmi__input--wrapper {
+  display: grid;
+  column-gap: 3rem;
+  row-gap: 1.8rem;
+  grid-template-columns: 1fr 1fr;
+  width: 62.7rem;
+  flex-shrink: 0;
+  margin-bottom: 2.6rem;
+} 
+#bmi--input--factor {
+  grid-column: 1/3;
+}
+.bmi__btn--bmi-calculate {
+  background-color: transparent;
+  display: inline-flex;
+  padding: 1.4rem 8.07rem 1.4rem 3.1rem;
+  align-items: flex-start;
+  border-radius: 3rem;
+  border: 1px solid #FFF;
+  color: #FFF;
+  font-size: 1.3rem;
+  line-height: 2.6rem; /* 200% */
+  letter-spacing: 0.13rem;
+  text-transform: uppercase;
+}
+.bmi__table--wrapper {
+  width: 61rem;
+  height: 61rem;
+  background-color: var(--bgBlack);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10.6rem 12.86rem;
+}
+.bmi__table {
+  width: 100%;
+}
+.bmi__table__row {
+  height: 6.6rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #707070;
+}
+.bmi__table__row:last-of-type{
+  border-bottom: none;
+}
+.bmi__table__cell  {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: var(--fontGrey);
+  font-family: var(--font);
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.8rem; /* 175% */
+  letter-spacing: 0.08rem;
+}
+.bmi__table__cell:last-of-type{
+  padding-left: 3.2rem;
+  border-left: 1px solid #707070;
+}
+.bmi__table__header > .bmi__table__cell {
+  color: var(--fontWhite);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.bmi__table--wrapper span {
+  margin-top: 3.3rem;
+  width: 100%;
+  color: var(--fontWhite);
+  font-family: var(--font);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2.5rem;
+  letter-spacing: 0.08rem;
+}
+.bmi__table--wrapper span > strong {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+/* responsive */
+@media all and (max-width: 1300px) {
+  .section--bmi {
+    width: 67.7%;
+    height: fit-content;
+    margin: 4rem auto;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10.6rem 12.86rem;
-
-    .table {
-      width: 100%;
-      .row {
-        height: 6.6rem;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid #707070;
-        &:last-of-type{
-          border-bottom: none;
-        }
-      }
-      .cell  {
-        display: flex;
-        /* justify-content: center; */
-        align-items: center;
-        width: 100%;
-        color: var(--fontGrey);
-        font-family: var(--font);
-        font-size: 1.6rem;
-        font-weight: 300;
-        line-height: 2.8rem; /* 175% */
-        letter-spacing: 0.08rem;
-        &:last-of-type{
-          padding-left: 3.2rem;
-          border-left: 1px solid #707070;
-        }
-      }
-      .header > .cell {
-        color: var(--fontWhite);
-        font-weight: 700;
-        text-transform: uppercase;
-      }
-    }
-
-    span {
-      margin-top: 3.3rem;
-      width: 100%;
-      color: var(--fontWhite);
-      font-family: var(--font);
-      font-size: 1.4rem;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 2.5rem;
-      letter-spacing: 0.08rem;
-      strong {
-        font-size: 1.6rem;
-        font-weight: 700;
-      }
-    }
   }
 }
+
+@media all and (max-width: 800px) {
+  .bmi__text--lg {
+    font-size: clamp(4rem, 6vw ,6rem);
+    margin: 6rem 0;
+  }
+  .bmi__text--lg::after {
+    transform: translate(50%, 0);
+  }
+  .section--bmi {
+    width: 80%;
+    height: fit-content;
+    margin: 2rem auto;
+    flex-direction: column;
+  }
+  .bmi__text--wrapper {}
+  .bmi__input--wrapper {
+    grid-template-columns: 1fr;
+  }
+  #bmi--input--factor {
+    grid-column: 1/2;
+  } 
+  .bmi__input--wrapper {
+    width: 100%;
+  }
+  .bmi__table--wrapper {
+    display: none;
+  }
+}
+
+
+
 
 
 /********************************/
