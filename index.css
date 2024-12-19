@@ -359,20 +359,36 @@ input {
 /******* split responsive *******/
 @media all and (max-width: 1300px) and (min-width: 801px){
   .split__text--lg {
+    width: fit-content;
+    height: fit-content;
+    line-height: 1.5;
     font-size: 3.2rem;
+    margin-bottom: 0;
   }
-  .split--first .split__img {
+  .split--second .split__text--sm {
+    padding-right: 3rem;
+  }
+  .split--first .split__img,
+  .split--second .split__img {
     translate: 0 0;
   }
   .split--first .split__img img,
   .split--second .split__img img {
     /* width: 80%; */
-    max-width: 40vw;
-    max-height: 40vw;
+    /* max-width: 40vw; */
+    max-height: 100%;
     object-fit: cover;
   }
+  .split__text-wrapper {
+    gap: 2rem;
+  }
+  .split--first .split__text-wrapper {
+    padding-right: 6rem;
+  }
   .split--second .split__text-wrapper {
-    transform: translate(6rem, 0);
+    width: fit-content;
+    padding-left: 6rem;
+    /* flex: 0; */
   }
 }
 
@@ -897,7 +913,7 @@ input {
 /*          bmi section         */
 /********************************/
 .section--bmi {
-  width: 130rem;
+  width: 128rem;
   height: 72.5rem;
   display: flex;
   align-items: center;

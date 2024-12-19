@@ -64,7 +64,7 @@ table {
 /* set: 1rem = 10px */
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 body {
   font-size: 1rem;
@@ -129,7 +129,7 @@ header > .gnb > ul > li#bookNow {
 }
 header > .gnb > ul > li > a {
   font-family: var(--font);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: var(--fontWhite);
   font-weight: 700;
   line-height: 1.8rem; /* 150% */
@@ -176,7 +176,7 @@ header > .utility > #hamburger {
   }
 }
 
-@media all and (max-width: 1300px) and (min-width: 800px) {
+@media all and (max-width: 1300px) and (min-width: 801px) {
 
   header > .utility > .btn-book {
     background-color: transparent;
