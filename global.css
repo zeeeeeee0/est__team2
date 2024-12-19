@@ -168,13 +168,17 @@ header > .utility > #hamburger {
 }
 
 @media all and (max-width: 1300px) {
+  header > h1 { 
+    margin-left: 0rem ;
+  }
   header > .gnb > ul {
     gap: 3rem;
   }
 }
 
 @media all and (max-width: 1300px) and (min-width: 800px) {
-    header > .utility > .btn-book {
+
+  header > .utility > .btn-book {
     background-color: transparent;
     color: var(--fontWhite);
     border-radius: 0;
@@ -376,6 +380,12 @@ footer {
   }
   .footer__logo {
     grid-column: 1/5;
+    width: 18.3rem;
+    object-fit: cover;
+  }
+  .footer__logo img {
+    width: 100%;
+
   }
   .footer__text {
     grid-column: 1/5;
