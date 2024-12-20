@@ -1,0 +1,317 @@
+/* General Reset */
+* {
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+} 
+
+:root {
+  --background: #131619;
+  --font: "Heebo", sans-serif;
+  --altFont: "Yantramanav", serif;
+  --fontBlack: #000;
+  --fontWhite: #FFF;
+  --fontGrey: #c4c4c4;
+  --bgWhite: #FFF;
+  --bgBlack: #000;
+	--pointColor: #affe02;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--fontWhite);
+  line-height: 1.5;
+}
+
+
+/* Hero Section */
+.hero {
+  color: var(--fontWhite);
+  position: relative;
+  background: url('./image/sporty-african-american-man-trains-dark-gym-rubs-his-hands-with-magnesia-young-guy-makes-clap.jpg') no-repeat center center/cover;
+  height: 400px;
+}
+
+ .v-line {
+  border-left : 3px solid var(--pointColor);
+  position: absolute;
+  margin-top: 15px;
+  height: 40%;
+  left: 50%;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), #131619);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero-content h1 {
+  color: var(--fontWhite);
+   font-size: 10rem;
+    font-style: normal;
+    font-weight: 800;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Section Styles */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-tagline {
+  display: inline-block;
+  text-align: center; 
+  padding: 10px 50px;
+  /* border-radius: 3px; */
+  background-color: var(--pointColor);
+  color: var(--background);
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 40px;
+  letter-spacing: -0.3px;
+  animation: slideUp 1s ease-in-out;
+}
+
+.section-title {
+  color: var(--fontWhite);
+  font-size: 6rem;
+  font-weight: 900;
+  margin-bottom: 11px;
+}
+
+.section-description {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: var(--fontWhite);
+  margin: 0 auto 80px;
+  width: 50%;
+  line-height: 1.7;
+}
+
+/* Pricing Cards */
+.pricing-cards {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  justify-content: center;
+}
+
+.card {
+  color: var(--fontBlack);
+  background-color: var(--bgWhite);
+  padding: 70px 30px 60px 30px;
+  /* border: 1px solid #444; */
+  width: 300px;
+  position: relative;
+  text-align: left;
+  /* border-radius: 8px; */
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.07);
+  box-shadow: 10px 10px 20px rgba(0, 255, 0, 0.322);
+}
+
+.card.highlight {
+  background: var(--pointColor);
+  color: var(--fontBlack);
+}
+
+.card h3 {
+  font-size: 23px;
+  margin-bottom: 30px;
+  font-weight: 900;
+}
+
+.card-description {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--fontBlack);
+  margin: 0 0 20px;
+  line-height: 1.3;
+}
+
+.card-price {
+  font-size: 23px;
+  color: var(--fontBlack);
+  margin-bottom: 25px;
+  font-weight: 900;
+  letter-spacing: 0px;
+
+}
+
+.card-btn {
+  display: inline-block;
+  padding: 10px 30px;
+  /* background: var(--bgBlack); */
+  color: var(--fontBlack)
+  text-decoration: none;
+  font-weight: bold;
+  border: 1.5px solid #000;
+  /* border-radius: 5px; */
+  transition: background 0.3s ease;
+}
+
+.card-btn:hover {
+  background: var(--bgBlack);
+  color: var(--fontWhite);
+}
+
+.best-value {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 12px;
+  background: #000;
+  color:var(--pointColor);
+  padding: 5px 16px;
+  border-radius: 30px;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+
+.about-content {
+  max-width: 50%;
+  text-align: left;
+  font-size: 20px;
+}
+
+.about-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  flex: 0 0 300px; /* Reduce photo size */
+}
+
+.image-frame {
+  background-color: var(--pointColor);
+  padding: 10px;
+  display: inline-block;
+}
+
+.image-frame img {
+  width: 100%;
+}
+
+/* Why Choose Us Section */
+.why-choose {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+
+.why-content {
+  max-width: 50%;
+  text-align: left;
+}
+
+.why-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form button {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form input,
+.contact-form select {
+  background: #222;
+  color: #fff;
+}
+
+.contact-form button {
+  background: var(--pointColor);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #cfc;
+  transform: translateY(-3px);
+}
+
+/* Animation Effects */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media all and (min-width: 801px) and (max-width:1300px) {
+    html {
+        font-size: 52.5%;
+      }
+    .section-container {
+        width: 90rem;
+        max-width: 90rem;
+        padding: 3rem 0;
+    }
+}
+
+@media all and (max-width: 800px) {}
+
+@media all and (min-width: 801px) and (max-width:1300px) {} 
+
+/* Larger 'Choose Your Plan' in Contact Section */
+.contact .section-tagline {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
