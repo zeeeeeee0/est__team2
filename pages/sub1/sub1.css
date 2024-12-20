@@ -22,7 +22,9 @@ body {
     color: var(--fontWhite);
     font-weight: 700;
 }
-
+h3{
+    text-transform: uppercase;
+}
 
 
 /* 타이틀 */
@@ -31,7 +33,7 @@ body {
     justify-content: baseline;
     align-items: center;
     color: var(--fontWhite);
-    height: 74.5rem;
+    height: 54.5rem;
     margin-left: 7.1rem;
 }
 
@@ -83,10 +85,11 @@ body {
 
 .main-contents-containar {
     max-width: 130rem;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 4rem;
+    margin: 0 auto;
     margin: 0 7.1rem;
 }
 
@@ -96,7 +99,7 @@ body {
     align-items: center;
 }
 
-.back-text {
+/* .back-text {
     position: absolute;
     top: -6rem;
     color: var(--bgBlack);
@@ -107,8 +110,35 @@ body {
     font-weight: 700;
     line-height: 11.2rem;
     text-transform: uppercase;
-}
+} */
 
+.back-text {
+    position: absolute;
+    top: -6rem;
+    font-size: 11.2rem;
+    font-weight: 700;
+    line-height: 11.2rem;
+    font-family: var(--altFont);
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #404040;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+.textarea__title {
+    width: auto;
+    height: auto;
+    margin-left: 0;
+}
+.textarea__title h3 {
+    position: absolute;
+    top: 0;
+    min-width: 53rem;
+}
+.textarea__title .back-text,
+.textarea__title .a11y-hidden {
+    position: initial;
+}
 
 
 .textarea {
@@ -122,6 +152,7 @@ body {
     font-size: 7rem;
     position: absolute;
     top: 13rem;
+    margin-left: 3rem;
 }
 
 .main-contents-1 {
@@ -145,8 +176,7 @@ body {
 
 .main-contents__text {
     margin-top: 3rem;
-    margin-left: 3rem;
-
+    /* margin-left: 3rem; */
 }
 
 /* 드롭다운 */
@@ -210,7 +240,7 @@ body {
 }
 
 /* 세컨드 컨텐츠 */
-.second-back-text {
+/* .second-back-text {
     position: absolute;
     top: 15rem;
     color: var(--bgBlack);
@@ -221,8 +251,20 @@ body {
     font-weight: 700;
     line-height: 11.2rem;
     text-transform: uppercase;
+} */
+.second-back-text {
+    position: absolute;
+    top: 15rem;
+    font-size: 11.2rem;
+    font-weight: 700;
+    line-height: 11.2rem;
+    text-transform: uppercase;
+    font-family: var(--altFont);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #404040;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
-
 .second-contents__main {
     height: 55rem;
     display: flex;
@@ -250,6 +292,7 @@ body {
 }
 
 .second-contents__title {
+    position: absolute;
     font-size: 12rem;
     text-transform: uppercase;
 }
@@ -261,7 +304,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    margin-top: 19rem;
+    margin-top: 9rem;
     padding: 1rem;
 }
 
@@ -269,7 +312,8 @@ body {
     width: 50rem;
     min-width: 35rem;
     height: 40rem;
-    object-fit: cover;
+    /* object-fit: cover; */
+    flex-shrink: 0;
 }
 
 .second-contents__img img {
@@ -284,12 +328,11 @@ body {
     flex-direction: column;
 }
 
-
-
 .second-contents__titlebox__main {
     font-size: 5rem;
     color: var(--fontWhite);
     padding: 3rem;
+    padding: 6rem 3rem 0 3rem;
 }
 
 .second-contents__titlebox:hover .second-contents__titlebox__main span {
@@ -355,6 +398,7 @@ body {
 }
 
 .third-contents__title {
+    position: absolute;
     font-size: 10rem;
     text-transform: uppercase;
 }
@@ -440,7 +484,7 @@ body {
 
 .coach-img:hover .coach-click img {
     cursor: pointer;
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
     transition: all .5s;
 }
 
@@ -454,7 +498,7 @@ body {
 
     /* 1300 title  */
     .title {
-        height: 70rem;
+        height: 50rem;
         margin: 0 auto;
         padding: 3.2rem;
     }
@@ -523,7 +567,8 @@ body {
     }
 
     .title {
-        height: 50rem;
+        height: 30rem;
+        margin-bottom: 4rem;
     }
 
     .title__icon {
@@ -572,7 +617,7 @@ body {
 
     .main-contents-1 {
         margin-top: 3rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .main-contents__text {
@@ -622,7 +667,7 @@ body {
 
     .coach-name {
         font-size: 3rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.2rem;
     }
 
     .coach-ex {
