@@ -31,7 +31,7 @@ jobs:
       - name: Merge main into deploy
         run: |
           git checkout deploy
-          git merge main --allow-unrelated-histories -m "Automated merge from main to deploy"
+          git merge main -m "Automated merge from main to deploy"
           git push origin deploy
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
