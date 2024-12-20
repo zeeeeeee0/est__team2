@@ -5,22 +5,7 @@
   -moz-user-drag: none;
   -ms-user-drag: none;
   user-drag: none;
-}
-
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-} */
-
-body {
-  background-color: #000;
-  color: #fff;
-  line-height: 1.5;
-}
-
-/* start @@@@@@@@@@@@@@@@@@ */
+} 
 
 :root {
   --background: #131619;
@@ -33,14 +18,28 @@ body {
   --bgBlack: #000;
 	--pointColor: #affe02;
 }
-/* end @@@@@@@@@@@@@@@@@@ */
+
+body {
+  background-color: var(--background);
+  color: var(--fontWhite);
+  line-height: 1.5;
+}
 
 
 /* Hero Section */
 .hero {
+  color: var(--fontWhite);
   position: relative;
   background: url('./image/sporty-african-american-man-trains-dark-gym-rubs-his-hands-with-magnesia-young-guy-makes-clap.jpg') no-repeat center center/cover;
   height: 400px;
+}
+
+ .v-line {
+  border-left : 3px solid var(--pointColor);
+  position: absolute;
+  margin-top: 15px;
+  height: 40%;
+  left: 50%;
 }
 
 .hero-overlay {
@@ -49,7 +48,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), #000);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), #131619);
 }
 
 .hero-content {
@@ -60,9 +59,10 @@ body {
 }
 
 .hero-content h1 {
-   font-size: 8rem;
+  color: var(--fontWhite);
+   font-size: 10rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
   animation: fadeIn 1s ease-in-out;
 }
 
@@ -73,83 +73,105 @@ section {
 }
 
 .section-tagline {
-  border: 1px solid #0f0;
-  border-radius: 50px;
-  padding: 5px;        
   display: inline-block;
   text-align: center; 
-  margin: 0 auto;
-  color: #0f0;
+  padding: 10px 50px;
+  /* border-radius: 3px; */
+  background-color: var(--pointColor);
+  color: var(--background);
   font-size: 2rem;
-  font-weight: regular;
-  margin-bottom: 10px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  letter-spacing: -0.3px;
   animation: slideUp 1s ease-in-out;
 }
 
 .section-title {
+  color: var(--fontWhite);
   font-size: 6rem;
-  font-weight: bolder;
-  margin-bottom: 20px;
+  font-weight: 900;
+  margin-bottom: 11px;
 }
 
 .section-description {
-  color: #ccc;
-  margin: 0 auto 30px;
-  max-width: 600px;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: var(--fontWhite);
+  margin: 0 auto 80px;
+  width: 50%;
+  line-height: 1.7;
 }
 
 /* Pricing Cards */
 .pricing-cards {
   display: flex;
-  gap: 20px;
+  gap: 40px;
+  width: 100%;
   justify-content: center;
 }
 
 .card {
-  background: #333;
-  padding: 30px;
-  border: 1px solid #444;
-  width: 280px;
+  color: var(--fontBlack);
+  background-color: var(--bgWhite);
+  padding: 70px 30px 60px 30px;
+  /* border: 1px solid #444; */
+  width: 300px;
   position: relative;
-  text-align: center;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  /* border-radius: 8px; */
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 15px rgba(0, 255, 0, 0.3);
+  transform: scale(1.07);
+  box-shadow: 10px 10px 20px rgba(0, 255, 0, 0.322);
 }
 
 .card.highlight {
-  background: #0f0;
-  color: #000;
+  background: var(--pointColor);
+  color: var(--fontBlack);
 }
 
 .card h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
+  font-size: 23px;
+  margin-bottom: 30px;
+  font-weight: 900;
+}
+
+.card-description {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--fontBlack);
+  margin: 0 0 20px;
+  line-height: 1.3;
 }
 
 .card-price {
-  font-size: 26px;
-  color: #0f0;
-  margin-bottom: 15px;
+  font-size: 23px;
+  color: var(--fontBlack);
+  margin-bottom: 25px;
+  font-weight: 900;
+  letter-spacing: 0px;
+
 }
 
 .card-btn {
   display: inline-block;
-  padding: 10px 20px;
-  background: #0f0;
-  color: #000;
+  padding: 10px 30px;
+  /* background: var(--bgBlack); */
+  color: var(--fontBlack)
   text-decoration: none;
   font-weight: bold;
-  border-radius: 5px;
+  border: 1.5px solid #000;
+  /* border-radius: 5px; */
   transition: background 0.3s ease;
 }
 
 .card-btn:hover {
-  background: #cfc;
+  background: var(--bgBlack);
+  color: var(--fontWhite);
 }
 
 .best-value {
@@ -158,9 +180,9 @@ section {
   right: 10px;
   font-size: 12px;
   background: #000;
-  color: #0f0;
-  padding: 5px 10px;
-  border-radius: 3px;
+  color:var(--pointColor);
+  padding: 5px 16px;
+  border-radius: 30px;
 }
 
 /* About Section */
@@ -187,14 +209,13 @@ section {
 }
 
 .image-frame {
-  border: 4px solid #0f0;
+  background-color: var(--pointColor);
   padding: 10px;
   display: inline-block;
 }
 
 .image-frame img {
   width: 100%;
-  border-radius: 5px;
 }
 
 /* Why Choose Us Section */
@@ -240,7 +261,7 @@ section {
 }
 
 .contact-form button {
-  background: #0f0;
+  background: var(--pointColor);
   color: #000;
   font-weight: bold;
   cursor: pointer;

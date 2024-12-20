@@ -1,0 +1,124 @@
+        .pricing-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #3a3a3a;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            flex: 1 1 300px;
+            max-width: 320px;
+            text-align: left;
+            position: relative;
+        }
+
+        .card.highlight {
+            background-color: #00ff00;
+            color: black;
+        }
+
+        .best-value {
+            position: absolute;
+            top: 10px;
+            right: -35px;
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+            transform: rotate(45deg);
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .card h2 {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 16px;
+            margin-bottom: 25px;
+            line-height: 1.5;
+            color: #cccccc;
+        }
+
+        .card .price {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            display: inline-block;
+            padding: 10px 25px;
+            border: 2px solid white;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+
+        .card a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        @media (max-width: 768px) {
+            .pricing-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                padding: 20px;
+            }
+
+            .card h2 {
+                font-size: 20px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+
+            .card .price {
+                font-size: 24px;
+            }
+
+            .card a {
+                font-size: 14px;
+                padding: 8px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .header p {
+                font-size: 16px;
+            }
+
+            .card h2 {
+                font-size: 18px;
+            }
+
+            .card p {
+                font-size: 12px;
+            }
+
+            .card .price {
+                font-size: 20px;
+            }
+
+            .card a {
+                font-size: 12px;
+                padding: 6px 16px;
+            }
+        }
