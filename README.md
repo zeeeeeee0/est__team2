@@ -18,7 +18,7 @@
   </tr>
   <tr>
     <td colspan="2">
-    훈장등의 영전은 이를 받은 자에게만 효력이 있고, 어떠한 특권도 이에 따르지 아니한다. 국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다.
+    커리큘럼 서브페이지 디자인 및 퍼블리싱, 보고서작성
     </td>
   </tr>
   <tr>
@@ -27,7 +27,7 @@
   </tr>
   <tr>
     <td colspan="2">
-    훈장등의 영전은 이를 받은 자에게만 효력이 있고, 어떠한 특권도 이에 따르지 아니한다. 국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다.
+    About 서브페이지 디자인 및 퍼블리싱
     </td>
   </tr>
   <tr>
@@ -36,7 +36,7 @@
   </tr>
   <tr>
     <td colspan="2">
-    훈장등의 영전은 이를 받은 자에게만 효력이 있고, 어떠한 특권도 이에 따르지 아니한다. 국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다.
+    멤버스 서브페이지 디자인 및 퍼블리싱
     </td>
   </tr>
   <tr>
@@ -45,7 +45,7 @@
   </tr>
   <tr>
     <td colspan="2">
-    훈장등의 영전은 이를 받은 자에게만 효력이 있고, 어떠한 특권도 이에 따르지 아니한다. 국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다.
+      형상관리 담당자, 메인페이지 퍼블리싱, 시연녹화
     </td>
   </tr>
 
@@ -53,9 +53,40 @@
 
 ## 개요
 
-### 개발 목적
+### 개발 환경
+<table>
+  <tbody>
+    <tr>
+      <td >문서 및 버전</td>
+      <td >html5, css3</td>
+    </tr>
+    <tr>
+      <td >인코딩</td>
+      <td >UTF-8</td>
+    </tr>
+    <tr>
+      <td >웹 유형</td>
+      <td >PC, Mobile, Responsive(PC first)</td>
+    </tr>
+    <tr>
+      <td >크로스 브라우징</td>
+      <td >Chrome, Microsoft Edge, safari (최신버전)</td>
+    </tr>
+    <tr>
+      <td >형상관리</td>
+      <td >Github</td>
+    </tr>
+    <tr>
+      <td >개발도구</td>
+      <td >VScode</td>
+    </tr>
+    <tr>
+      <td >해상도 기준 / 디자인 너비</td>
+      <td >Mobile ~800px / Tablet 801px~1300px / PC 1301px~</td>
+    </tr>
+  </tbody>
+</table>
 
-?
 
 ### 주제 
   
@@ -115,6 +146,25 @@ Semantic Tag와 대체 요소를 충실하게 기입하고 웹 접근성 지침�
 
 ## 폴더 구조
 
-## 개선 과제
-### 사용자 경험 측면
-### 개발 경험 측면
+```
+📦 src
+┣━ 📦 docs
+┣━ 📦 images
+┣━ 📦 pages
+┃   ┣━ 📦 sub1
+┃   ┃  ┣━📦 images
+┃   ┃  ┣━📜 sub1.css
+┃   ┃  ┗━📜 sub1.html
+┃   ┣━ 📦 sub2
+┃   ┃  ┣━📦 images
+┃   ┃  ┣━📜 sub2.css
+┃   ┃  ┗━📜 sub2.html
+┃   ┗━ 📦 sub3
+┃      ┣━📦 images
+┃      ┣━📜 sub3.css
+┃      ┗━📜 sub3.html
+┣━ 📜 README.md
+┣━ 📜 global.css
+┣━ 📜 index.css
+┗━ 📜 index.html
+```
