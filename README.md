@@ -16,8 +16,8 @@
     <th>역할</th>
   </tr>
   <tr>
-    <td rowspan="1"><a href="https://github.com/choroc">오초록</a></td>
-    <td>팀장</td>
+    <td align="center"><a href="https://github.com/choroc">오초록</a></td>
+    <td align="center">팀장</td>
   </tr>
   <tr>
     <td colspan="2">
@@ -25,8 +25,8 @@
     </td>
   </tr>
   <tr>
-    <td><a href="https://github.com/kib09">김인배</a></td>
-    <td>팀원</td>
+    <td align="center"><a href="https://github.com/kib09">김인배</a></td>
+    <td align="center">팀원</td>
   </tr>
   <tr>
     <td colspan="2">
@@ -34,8 +34,8 @@
     </td>
   </tr>
   <tr>
-    <td><a href="https://github.com/zeeeeeee0">장지영</a></td>
-    <td>팀원</td>
+    <td align="center"><a href="https://github.com/zeeeeeee0">장지영</a></td>
+    <td align="center">팀원</td>
   </tr>
   <tr>
     <td colspan="2">
@@ -43,8 +43,8 @@
     </td>
   </tr>
   <tr>
-    <td><a href="https://github.com/jadewisemann">정유진</a></td>
-    <td>팀원</td>
+    <td align="center"><a href="https://github.com/jadewisemann">정유진</a></td>
+    <td align="center">팀원</td>
   </tr>
   <tr>
     <td colspan="2">
