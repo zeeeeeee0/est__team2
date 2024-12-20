@@ -107,9 +107,12 @@ Semantic Tag와 대체 요소를 충실하게 기입하고 웹 접근성 지침�
 - 간단한 html로 이루어진 프로젝트로 배포에 별포의 빌드 과정이 필요하지는 않았습니다.<br>복잡성을 줄이기 위해, 형상관리를 위해 사용한 깃허브에서 제공하는 Github Pages를 사용해 배포했습니다.
 
 ## QR
+<p align="center">
+
 ![qr-code](/docs/qr.svg)
 
 [or Click Hear](https://m.site.naver.com/1zvDY)
+</p>
 
 ## 폴더 구조
 
