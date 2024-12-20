@@ -554,6 +554,9 @@ h3 {
 
 
 @media all and (max-width: 800px) {
+    .textarea__title h3 {
+        min-width: 100%
+    }
 
     .main-contents {
         padding: 0 3.2rem;
