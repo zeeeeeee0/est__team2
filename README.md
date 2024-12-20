@@ -28,7 +28,7 @@
 - `deploy` 브런치를 따로 빼서 관리하고 github action을 통해서 `main`에 변경사항이 생기면 자동으로 merge하도록 했습니다.
 
 ## QR
-![qr-code](/docs/qr.png)
+![qr-code](/docs/qr.svg)
 
 [or Click Hear](https://jadewisemann.github.io/est__team2/)
 
