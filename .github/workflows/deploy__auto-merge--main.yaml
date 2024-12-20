@@ -1,5 +1,8 @@
 name: Auto Merge Main to Deploy
 
+permissions:
+  contents: write
+
 on:
   push:
     branches:
@@ -9,6 +12,10 @@ jobs:
   merge-deploy:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+      pull-requests: write
+      
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -26,3 +33,6 @@ jobs:
           git checkout deploy
           git merge main --allow-unrelated-histories -m "Automated merge from main to deploy"
           git push origin deploy
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+
