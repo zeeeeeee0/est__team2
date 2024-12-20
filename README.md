@@ -69,11 +69,9 @@
     
 ## 배포
 
-<img alt="Git Hub Pages" src ="https://img.shields.io/badge/GithubPages-222222.svg?&style=for-the-badge&logo=&logoColor=white"/> <img alt="Git Hub Actions" src ="https://img.shields.io/badge/GithubActions-222222.svg?&style=for-the-badge&logo=&logoColor=white"/>
+<img alt="Git Hub Pages" src ="https://img.shields.io/badge/GithubPages-222222.svg?&style=for-the-badge&logo=&logoColor=white"/> 
 
 - 간단한 html로 이루어진 프로젝트로 배포에 별포의 빌드 과정이 필요하지는 않았습니다.<br>복잡성을 줄이기 위해, 형상관리를 위해 사용한 깃허브에서 제공하는 Github Pages를 사용해 배포했습니다.
-
-- `deploy` 브런치를 따로 빼서 관리하고 github action을 통해서 `main`에 변경사항이 생기면 자동으로 merge하도록 했습니다.
 
 ## QR
 ![qr-code](/docs/qr.svg)
