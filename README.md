@@ -1,5 +1,5 @@
 <p align="center">
-  <img align="center" width="100" src="docs/logo.png" />
+  <img align="center" width="100" src="docs/logo.png"/>
   <h1 align="center">Crossfit Site, Croop</h1>
 </p>
 
