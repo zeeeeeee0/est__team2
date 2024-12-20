@@ -30,9 +30,6 @@ body {
   --header-size: 9rem;
 }
 button { cursor: pointer; }
-* {
-  user-select: none;
-}
 
 /********************************/
 /*       common element         */
@@ -131,6 +128,12 @@ input {
   border-radius: 3rem;
   border: 1px solid #404040;
   outline: none;
+}
+input::placeholder {
+  transition: color .3s ease;
+}
+input:hover::placeholder  {
+  color: var(--background);
 }
 
 
