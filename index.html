@@ -12,23 +12,23 @@
   <header>
     <h1 class="logo">
       <a href="index.html">
-        <img src="images/logo.png" alt="KROPP">
+        <img src="images/logo.png" alt="KROPP logo">
       </a>
     </h1>
     <h2 class="a11y-hidden">메뉴</h2>
     <div class="utility">
-      <button class="btn-book">Book now</button>
+      <button class="btn-book" aria-label="booking button">Book now</button>
       <input id="hamburger" type="checkbox">
-      <label for="hamburger" id="btn-hamburger">
-        <div class="btn"><img src="images/ico_what.svg" alt="what"></div>
+      <label for="hamburger" id="btn-hamburger" aria-label="open navigation menu" >
+        <div class="btn"><img src="images/ico_what.svg" alt="open menu button"></div>
       </label>
     </div>
-    <nav class="gnb">
+    <nav class="gnb" aria-label="main menu">
       <ul>
-        <li><a href="index.html" target="_blank" title="Open new window">Home</a></li>
-        <li><a href="pages/sub1/sub1.html" target="_blank" title="Open new window">ABOUT</a></li>
-        <li><a href="pages/sub2/sub2.html" target="_blank" title="Open new window">Curriculum</a></li>
-        <li><a href="pages/sub3/sub3.html" target="_blank" title="Open new window">members</a></li>
+        <li><a href="index.html" target="_blank" title="Open new window" aria-label="open home in new tab">Home</a></li>
+        <li><a href="pages/sub1/sub1.html" target="_blank" title="Open new window" aria-label="open about page in new tab">ABOUT</a></li>
+        <li><a href="pages/sub3/sub3.html" target="_blank" title="Open new window" aria-label="open curriculum page in new tab">Curriculum</a></li>
+        <li><a href="pages/sub2/sub2.html" target="_blank" title="Open new window" aria-label="open members page in new tab">members</a></li>
       </ul>
     </nav>
   </header>
@@ -154,11 +154,11 @@
         <div class="lg-text bmi__text--lg">Input your BMI</div>
         <div class="sm-text bmi__text--sm">Duo graece ponderum ne, ei mel aliquando. Pro te<br>tamquam nonumes, nam no nemore epicurei</div>
         <div class="bmi__input--wrapper">
-          <input id="bmi__input--height" type="number" placeholder="Height / cm">
-          <input id="bmi__input--weight" type="number" placeholder="Weight / kg">
-          <input id="bmi__input--age" type="number" placeholder="Age">
+          <input id="bmi__input--height" type="text" placeholder="Height / cm">
+          <input id="bmi__input--weight" type="text" placeholder="Weight / kg">
+          <input id="bmi__input--age" type="text" placeholder="Age">
           <input id="bmi--input--gender" type="text" placeholder="Gender">
-          <input id="bmi--input--factor" type="number" placeholder="Select an activity factor:">
+          <input id="bmi--input--factor" type="text" placeholder="Select an activity factor:">
         </div>
         <button class="btn--arrow bmi__btn--bmi-calculate">Calculate</button>
       </div>
