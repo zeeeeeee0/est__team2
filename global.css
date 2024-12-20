@@ -205,7 +205,8 @@ header > .utility > #hamburger {
     justify-content: center;
     align-items: center;
   }
-  header > .gnb > ul  > li  {}
+  header > .gnb > ul  > li  {
+  }
   header > .gnb > ul > li > a {
     font-size: 4rem;
     line-height: 1;
@@ -242,6 +243,30 @@ header > .utility > #hamburger {
   }
 }
 
+/* animation */
+/* gnb li */
+header > .gnb > ul > li > a {
+  transition: all 0.3s ease;
+}
+header > .gnb > ul > li > a:hover {
+  color: var(--pointColor);
+}
+/* book btn */
+header > .utility > .btn-book:hover {
+  transition: all 0.3s ease;
+}
+@media all and (min-width: 1301px) {
+  header > .utility > .btn-book:hover {
+    background-color: var(--pointColor);
+  }
+}
+@media all and (max-width: 1300px) and (min-width: 801px) {
+  header > .utility > .btn-book:hover {
+    border-color: transparent;
+    color: var(--pointColor);
+    translate: 0 1px;
+  }
+}
 
 /*==========================================
 	footer

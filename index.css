@@ -30,9 +30,6 @@ body {
   --header-size: 9rem;
 }
 button { cursor: pointer; }
-* {
-  user-select: none;
-}
 
 /********************************/
 /*       common element         */
@@ -86,6 +83,30 @@ button { cursor: pointer; }
     font-size: clamp(3.2rem, 6vw ,6rem);
   }
 }
+/* animation */
+.lg-text {
+  transition: all .3s ease-in-out;
+}
+.lg-text::after {
+  transition: all .3s ease-in-out;
+}
+.lg-text:hover::after {
+  font-size: 12rem;
+}
+.split__text--lg:hover,
+.form__text--lg:hover,
+.family__text--lg:hover,
+.bmi__text--lg:hover {
+  translate: 1rem 0;
+}
+
+.form__text--lg:hover::after,
+.family__text--lg:hover::after {
+  font-size: 19.4rem;
+} 
+
+
+
 .btn--arrow {
   position: relative;
   display: inline-flex;
@@ -131,6 +152,12 @@ input {
   border-radius: 3rem;
   border: 1px solid #404040;
   outline: none;
+}
+input::placeholder {
+  transition: color .3s ease;
+}
+input:hover::placeholder  {
+  color: var(--background);
 }
 
 
