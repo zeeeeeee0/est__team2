@@ -8,6 +8,55 @@
 ## 목표
 
 
+## 팀원 
+
+<table>
+  <tr>
+    <th>이름</th>
+    <th>역할</th>
+  </tr>
+  <tr>
+    <td rowspan="1"><a href="https://github.com/choroc">오초록</a></td>
+    <td>팀장</td>
+  </tr>
+  <tr>
+    <td colspan="2">
+    훈장등의 영전은 이를 받은 자에게만 효력이 있고, 어떠한 특권도 이에 따르지 아니한다. 국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다.
+    </td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/kib09">김인배</a></td>
+    <td>팀원</td>
+  </tr>
+  <tr>
+    <td colspan="2">
+    훈장등의 영전은 이를 받은 자에게만 효력이 있고, 어떠한 특권도 이에 따르지 아니한다. 국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다.
+    </td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/zeeeeeee0">장지영</a></td>
+    <td>팀원</td>
+  </tr>
+  <tr>
+    <td colspan="2">
+    훈장등의 영전은 이를 받은 자에게만 효력이 있고, 어떠한 특권도 이에 따르지 아니한다. 국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다.
+    </td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/jadewisemann">정유진</a></td>
+    <td>팀원</td>
+  </tr>
+  <tr>
+    <td colspan="2">
+    훈장등의 영전은 이를 받은 자에게만 효력이 있고, 어떠한 특권도 이에 따르지 아니한다. 국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다.
+    </td>
+  </tr>
+
+</table>
+
+
+## 페이지 구성
+
 ## 형상관리
 
 - 팀원의 역할을 각각의 페이지에 필요한 요소를 개별 폴더로 관리하게 하였습니다.
@@ -29,7 +78,9 @@
 ## QR
 ![qr-code](/docs/qr.svg)
 
-[or Click Hear](https://jadewisemann.github.io/est__team2/)
+[or Click Hear](https://m.site.naver.com/1zvDY)
+
+## 폴더 구조
 
 ## 개선 과제
 ### 사용자 경험 측면
